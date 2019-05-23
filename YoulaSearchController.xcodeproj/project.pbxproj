@@ -12,6 +12,10 @@
 		BBC764862296CC2500C5D2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC764842296CC2500C5D2E7 /* Main.storyboard */; };
 		BBC764882296CC2600C5D2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC764872296CC2600C5D2E7 /* Assets.xcassets */; };
 		BBC7648B2296CC2600C5D2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC764892296CC2600C5D2E7 /* LaunchScreen.storyboard */; };
+		BBC764962296CC5800C5D2E7 /* YoulaSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC764932296CC5800C5D2E7 /* YoulaSearchController.swift */; };
+		BBC764972296CC5800C5D2E7 /* YoulaSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC764942296CC5800C5D2E7 /* YoulaSearchBar.swift */; };
+		BBC764982296CC5800C5D2E7 /* YoulaSearchResultsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC764952296CC5800C5D2E7 /* YoulaSearchResultsPresentable.swift */; };
+		BBC7649C2296E28300C5D2E7 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7649B2296E28300C5D2E7 /* SearchResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		BBC764872296CC2600C5D2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC7648A2296CC2600C5D2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC7648C2296CC2600C5D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC764932296CC5800C5D2E7 /* YoulaSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoulaSearchController.swift; sourceTree = "<group>"; };
+		BBC764942296CC5800C5D2E7 /* YoulaSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoulaSearchBar.swift; sourceTree = "<group>"; };
+		BBC764952296CC5800C5D2E7 /* YoulaSearchResultsPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoulaSearchResultsPresentable.swift; sourceTree = "<group>"; };
+		BBC7649B2296E28300C5D2E7 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		BBC7647F2296CC2500C5D2E7 /* YoulaSearchController */ = {
 			isa = PBXGroup;
 			children = (
+				BBC764922296CC2E00C5D2E7 /* SearchController */,
 				BBC764802296CC2500C5D2E7 /* AppDelegate.swift */,
 				BBC764822296CC2500C5D2E7 /* ViewController.swift */,
+				BBC7649B2296E28300C5D2E7 /* SearchResultsController.swift */,
 				BBC764842296CC2500C5D2E7 /* Main.storyboard */,
 				BBC764872296CC2600C5D2E7 /* Assets.xcassets */,
 				BBC764892296CC2600C5D2E7 /* LaunchScreen.storyboard */,
 				BBC7648C2296CC2600C5D2E7 /* Info.plist */,
 			);
 			path = YoulaSearchController;
+			sourceTree = "<group>";
+		};
+		BBC764922296CC2E00C5D2E7 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				BBC764942296CC5800C5D2E7 /* YoulaSearchBar.swift */,
+				BBC764932296CC5800C5D2E7 /* YoulaSearchController.swift */,
+				BBC764952296CC5800C5D2E7 /* YoulaSearchResultsPresentable.swift */,
+			);
+			path = SearchController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC764972296CC5800C5D2E7 /* YoulaSearchBar.swift in Sources */,
+				BBC764962296CC5800C5D2E7 /* YoulaSearchController.swift in Sources */,
+				BBC764982296CC5800C5D2E7 /* YoulaSearchResultsPresentable.swift in Sources */,
 				BBC764832296CC2500C5D2E7 /* ViewController.swift in Sources */,
+				BBC7649C2296E28300C5D2E7 /* SearchResultsController.swift in Sources */,
 				BBC764812296CC2500C5D2E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJLM6B3MHM;
 				INFOPLIST_FILE = YoulaSearchController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJLM6B3MHM;
 				INFOPLIST_FILE = YoulaSearchController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
